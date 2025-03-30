@@ -1,0 +1,25 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey_SOC.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/A_my_project/Gaowin/Briey_SOC/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/A_my_project/Gaowin/Briey_SOC/impl/temp/rtl_parser.result",
+ "Top" : "Briey_SOC",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

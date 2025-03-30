@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Briey_SOC" Lut="2" T_Register="3658(0)" T_Alu="855(0)" T_Lut="5096(2)" T_MULTALU27X18="4(0)" T_Bsram="14(0)">
+    <SubModule name="u_Gowin_PLL"/>
+    <SubModule name="briey_inst" Register="485" Alu="8" Lut="155" T_Register="3658(485)" T_Alu="855(8)" T_Lut="5094(155)" T_MULTALU27X18="4(0)" T_Bsram="14(0)">
+        <SubModule name="io_asyncReset_buffercc" Register="2" T_Register="2(2)"/>
+        <SubModule name="resetCtrl_axiReset_buffercc" Register="2" T_Register="2(2)"/>
+        <SubModule name="axi_ram" Register="28" Alu="11" Lut="62" Bsram="4" T_Register="28(28)" T_Alu="11(11)" T_Lut="62(62)" T_Bsram="4(4)"/>
+        <SubModule name="axi_sdramCtrl" Register="42" Alu="11" Lut="58" T_Register="185(42)" T_Alu="36(11)" T_Lut="239(58)">
+            <SubModule name="ctrl" Register="133" Alu="25" Lut="173" T_Register="143(133)" T_Alu="25(25)" T_Lut="181(173)">
+                <SubModule name="chip_backupIn_fifo" T_Register="10(0)" T_Lut="8(0)">
+                    <SubModule name="fifo" Register="10" Lut="8" T_Register="10(10)" T_Lut="8(8)"/>
+                </SubModule>
+            </SubModule>
+        </SubModule>
+        <SubModule name="axi_apbBridge" Register="35" Lut="6" T_Register="35(35)" T_Lut="6(6)"/>
+        <SubModule name="axi_gpioACtrl" Register="64" Lut="5" T_Register="64(64)" T_Lut="5(5)"/>
+        <SubModule name="axi_gpioBCtrl" Register="64" Lut="2" T_Register="64(64)" T_Lut="2(2)"/>
+        <SubModule name="axi_timerCtrl" Register="118" Lut="43" T_Register="222(118)" T_Alu="191(0)" T_Lut="66(43)">
+            <SubModule name="prescaler_1" Register="16" Alu="31" Lut="2" T_Register="16(16)" T_Alu="31(31)" T_Lut="2(2)"/>
+            <SubModule name="timerA" Register="33" Alu="64" Lut="4" T_Register="33(33)" T_Alu="64(64)" T_Lut="4(4)"/>
+            <SubModule name="timerB" Register="17" Alu="32" Lut="4" T_Register="17(17)" T_Alu="32(32)" T_Lut="4(4)"/>
+            <SubModule name="timerC" Register="17" Alu="32" Lut="4" T_Register="17(17)" T_Alu="32(32)" T_Lut="4(4)"/>
+            <SubModule name="timerD" Register="17" Alu="32" Lut="4" T_Register="17(17)" T_Alu="32(32)" T_Lut="4(4)"/>
+            <SubModule name="interruptCtrl_1" Register="4" Lut="5" T_Register="4(4)" T_Lut="5(5)"/>
+        </SubModule>
+        <SubModule name="axi_uartCtrl" Register="33" Alu="5" Lut="22" T_Register="403(33)" T_Alu="42(5)" T_Lut="345(22)">
+            <SubModule name="uartCtrl_1" Register="21" Lut="43" T_Register="66(21)" T_Alu="6(0)" T_Lut="134(43)">
+                <SubModule name="tx" Register="11" Alu="3" Lut="32" T_Register="11(11)" T_Alu="3(3)" T_Lut="32(32)"/>
+                <SubModule name="rx" Register="32" Alu="3" Lut="59" T_Register="34(32)" T_Alu="3(3)" T_Lut="59(59)">
+                    <SubModule name="io_rxd_buffercc" Register="2" T_Register="2(2)"/>
+                </SubModule>
+            </SubModule>
+            <SubModule name="bridge_write_streamUnbuffered_queueWithOccupancy" Register="152" Alu="13" Lut="99" T_Register="152(152)" T_Alu="13(13)" T_Lut="99(99)"/>
+            <SubModule name="axi_uartCtrl_uartCtrl_1_io_read_queueWithOccupancy" Register="152" Alu="18" Lut="90" T_Register="152(152)" T_Alu="18(18)" T_Lut="90(90)"/>
+        </SubModule>
+        <SubModule name="axi_vgaCtrl" Register="147" Lut="27" T_Register="839(147)" T_Alu="172(0)" T_Lut="1047(27)">
+            <SubModule name="dma" Register="49" Alu="53" Lut="88" T_Register="658(49)" T_Alu="80(53)" T_Lut="973(88)">
+                <SubModule name="rspArea_fifo" Register="553" Alu="27" Lut="885" T_Register="595(553)" T_Alu="27(27)" T_Lut="885(885)">
+                    <SubModule name="popToPushGray_buffercc" Register="20" T_Register="20(20)"/>
+                    <SubModule name="bufferCC_15" Register="2" T_Register="2(2)"/>
+                    <SubModule name="pushToPopGray_buffercc" Register="20" T_Register="20(20)"/>
+                </SubModule>
+                <SubModule name="rspArea_frameClockArea_popCmdGray_buffercc" Register="14" T_Register="14(14)"/>
+            </SubModule>
+            <SubModule name="run_buffercc" Register="2" T_Register="2(2)"/>
+            <SubModule name="vga_ctrl" Register="26" Alu="92" Lut="46" T_Register="26(26)" T_Alu="92(92)" T_Lut="46(46)"/>
+            <SubModule name="pulseCCByToggle_1" Register="2" Lut="1" T_Register="6(2)" T_Lut="1(1)">
+                <SubModule name="bufferCC_15" Register="2" T_Register="2(2)"/>
+                <SubModule name="inArea_target_buffercc" Register="2" T_Register="2(2)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="axi_core_cpu" Register="900" Alu="303" Lut="2214" MULTALU27X18="4" Bsram="2" T_Register="1041(900)" T_Alu="369(303)" T_Lut="2415(2214)" T_MULTALU27X18="4(4)" T_Bsram="10(2)">
+            <SubModule name="IBusCachedPlugin_cache" Register="75" Alu="27" Lut="86" Bsram="3" T_Register="75(75)" T_Alu="27(27)" T_Lut="86(86)" T_Bsram="3(3)"/>
+            <SubModule name="dataCache_1" Register="66" Alu="39" Lut="115" Bsram="5" T_Register="66(66)" T_Alu="39(39)" T_Lut="115(115)" T_Bsram="5(5)"/>
+        </SubModule>
+        <SubModule name="io_coreInterrupt_buffercc" Register="2" T_Register="2(2)"/>
+        <SubModule name="jtagBridge_1" Register="114" Lut="69" T_Register="123(114)" T_Lut="72(69)">
+            <SubModule name="flowCCUnsafeByToggle_1" Register="7" Lut="3" T_Register="9(7)" T_Lut="3(3)">
+                <SubModule name="inputArea_target_buffercc" Register="2" T_Register="2(2)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="systemDebugger_1" Register="78" Lut="13" T_Register="78(78)" T_Lut="13(13)"/>
+        <SubModule name="axi4ReadOnlyDecoder_2" Register="6" Alu="3" Lut="56" T_Register="15(6)" T_Alu="3(3)" T_Lut="75(56)">
+            <SubModule name="errorSlave" Register="9" Lut="19" T_Register="9(9)" T_Lut="19(19)"/>
+        </SubModule>
+        <SubModule name="dbus_axi_decoder" Register="11" Alu="6" Lut="91" T_Register="22(11)" T_Alu="6(6)" T_Lut="112(91)">
+            <SubModule name="errorSlave" Register="11" Lut="21" T_Register="11(11)" T_Lut="21(21)"/>
+        </SubModule>
+        <SubModule name="axi_vgaCtrl_io_axi_decoder" Register="5" Alu="3" Lut="15" T_Register="14(5)" T_Alu="3(3)" T_Lut="30(15)">
+            <SubModule name="errorSlave" Register="9" Lut="15" T_Register="9(9)" T_Lut="15(15)"/>
+        </SubModule>
+        <SubModule name="axi_ram_io_axi_arbiter" Register="2" Lut="6" T_Register="11(2)" T_Alu="3(0)" T_Lut="40(6)">
+            <SubModule name="cmdArbiter" Register="3" Lut="23" T_Register="3(3)" T_Lut="23(23)"/>
+            <SubModule name="cmdRouteFork_thrown_translated_fifo" T_Register="6(0)" T_Alu="3(0)" T_Lut="11(0)">
+                <SubModule name="fifo" Register="6" Alu="3" Lut="11" T_Register="6(6)" T_Alu="3(3)" T_Lut="11(11)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="axi_sdramCtrl_io_axi_arbiter" Register="2" Lut="7" T_Register="12(2)" T_Alu="8(0)" T_Lut="85(7)">
+            <SubModule name="cmdArbiter" Register="4" Alu="5" Lut="65" T_Register="4(4)" T_Alu="5(5)" T_Lut="65(65)"/>
+            <SubModule name="cmdRouteFork_thrown_translated_fifo" T_Register="6(0)" T_Alu="3(0)" T_Lut="13(0)">
+                <SubModule name="fifo" Register="6" Alu="3" Lut="13" T_Register="6(6)" T_Alu="3(3)" T_Lut="13(13)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="axi_apbBridge_io_axi_arbiter" Register="2" Lut="8" T_Register="8(2)" T_Alu="3(0)" T_Lut="20(8)">
+            <SubModule name="cmdArbiter" Lut="2" T_Lut="2(2)"/>
+            <SubModule name="cmdRouteFork_thrown_translated_fifo" T_Register="6(0)" T_Alu="3(0)" T_Lut="10(0)">
+                <SubModule name="fifo" Register="6" Alu="3" Lut="10" T_Register="6(6)" T_Alu="3(3)" T_Lut="10(10)"/>
+            </SubModule>
+        </SubModule>
+        <SubModule name="io_apb_decoder" Lut="9" T_Lut="9(9)"/>
+        <SubModule name="apb3Router_1" Register="3" Lut="296" T_Register="3(3)" T_Lut="296(296)"/>
+    </SubModule>
+</Module>

@@ -1,0 +1,616 @@
+[
+ {
+  "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey_SOC.v",
+  "InstLine" : 1,
+  "InstName" : "Briey_SOC",
+  "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey_SOC.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "Briey_SOC",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey_SOC.v",
+    "InstLine" : 61,
+    "InstName" : "u_Gowin_PLL",
+    "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey_SOC.v",
+    "InstLine" : 90,
+    "InstName" : "briey_inst",
+    "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+    "ModuleLine" : 7,
+    "ModuleName" : "Briey",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 676,
+      "InstName" : "io_asyncReset_buffercc",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 12206,
+      "ModuleName" : "BufferCC"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 681,
+      "InstName" : "resetCtrl_axiReset_buffercc",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 12206,
+      "ModuleName" : "BufferCC"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 686,
+      "InstName" : "axi_ram",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 11838,
+      "ModuleName" : "Axi4SharedOnChipRam"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 713,
+      "InstName" : "axi_sdramCtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 11361,
+      "ModuleName" : "Axi4SharedSdramCtrl",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 11529,
+        "InstName" : "ctrl",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15164,
+        "ModuleName" : "SdramCtrl",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 15438,
+          "InstName" : "chip_backupIn_fifo",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 17332,
+          "ModuleName" : "StreamFifoLowLatency_3",
+          "SubInsts" : [
+           {
+            "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "InstLine" : 17358,
+            "InstName" : "fifo",
+            "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "ModuleLine" : 17481,
+            "ModuleName" : "StreamFifo_5"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 751,
+      "InstName" : "axi_apbBridge",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 11135,
+      "ModuleName" : "Axi4SharedToApb3Bridge"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 786,
+      "InstName" : "axi_gpioACtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 11043,
+      "ModuleName" : "Apb3Gpio",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 11070,
+        "InstName" : "io_gpio_read_buffercc",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15145,
+        "ModuleName" : "BufferCC_6"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 802,
+      "InstName" : "axi_gpioBCtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 11043,
+      "ModuleName" : "Apb3Gpio",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 11070,
+        "InstName" : "io_gpio_read_buffercc",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15145,
+        "ModuleName" : "BufferCC_6"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 818,
+      "InstName" : "axi_timerCtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 10572,
+      "ModuleName" : "PinsecTimerCtrl",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10646,
+        "InstName" : "io_external_buffercc",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15117,
+        "ModuleName" : "BufferCC_4"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10654,
+        "InstName" : "prescaler_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15094,
+        "ModuleName" : "Prescaler"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10661,
+        "InstName" : "timerA",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15048,
+        "ModuleName" : "Timer"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10670,
+        "InstName" : "timerB",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15002,
+        "ModuleName" : "Timer_1"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10679,
+        "InstName" : "timerC",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15002,
+        "ModuleName" : "Timer_1"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10688,
+        "InstName" : "timerD",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 15002,
+        "ModuleName" : "Timer_1"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10697,
+        "InstName" : "interruptCtrl_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14975,
+        "ModuleName" : "InterruptCtrl"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 833,
+      "InstName" : "axi_uartCtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 10153,
+      "ModuleName" : "Apb3UartCtrl",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10254,
+        "InstName" : "uartCtrl_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14846,
+        "ModuleName" : "UartCtrl",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14890,
+          "InstName" : "tx",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 17092,
+          "ModuleName" : "UartCtrlTx"
+         },
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14904,
+          "InstName" : "rx",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16798,
+          "ModuleName" : "UartCtrlRx",
+          "SubInsts" : [
+           {
+            "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "InstLine" : 16877,
+            "InstName" : "io_rxd_buffercc",
+            "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "ModuleLine" : 17457,
+            "ModuleName" : "BufferCC_14"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10273,
+        "InstName" : "bridge_write_streamUnbuffered_queueWithOccupancy",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14692,
+        "ModuleName" : "StreamFifo"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 10286,
+        "InstName" : "axi_uartCtrl_uartCtrl_1_io_read_queueWithOccupancy",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14692,
+        "ModuleName" : "StreamFifo"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 847,
+      "InstName" : "axi_vgaCtrl",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 9803,
+      "ModuleName" : "Axi4VgaCtrl",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 9900,
+        "InstName" : "dma",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14208,
+        "ModuleName" : "VideoDma",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14332,
+          "InstName" : "rspArea_fifo",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16566,
+          "ModuleName" : "StreamFifoCC",
+          "SubInsts" : [
+           {
+            "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "InstLine" : 16668,
+            "InstName" : "popToPushGray_buffercc",
+            "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "ModuleLine" : 17433,
+            "ModuleName" : "BufferCC_11"
+           },
+           {
+            "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "InstLine" : 16674,
+            "InstName" : "bufferCC_15",
+            "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "ModuleLine" : 17409,
+            "ModuleName" : "BufferCC_12"
+           },
+           {
+            "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "InstLine" : 16680,
+            "InstName" : "pushToPopGray_buffercc",
+            "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+            "ModuleLine" : 17385,
+            "ModuleName" : "BufferCC_13"
+           }
+          ]
+         },
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14347,
+          "InstName" : "rspArea_frameClockArea_popCmdGray_buffercc",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16547,
+          "ModuleName" : "BufferCC_10"
+         }
+        ]
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 9922,
+        "InstName" : "run_buffercc",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14189,
+        "ModuleName" : "BufferCC_3"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 9928,
+        "InstName" : "vga_ctrl",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14063,
+        "ModuleName" : "VgaCtrl"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 9956,
+        "InstName" : "pulseCCByToggle_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 14010,
+        "ModuleName" : "PulseCCByToggle",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14026,
+          "InstName" : "bufferCC_15",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16523,
+          "ModuleName" : "BufferCC_8"
+         },
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 14032,
+          "InstName" : "inArea_target_buffercc",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16499,
+          "ModuleName" : "BufferCC_9"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 877,
+      "InstName" : "axi_core_cpu",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 4658,
+      "ModuleName" : "VexRiscv",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 6169,
+        "InstName" : "IBusCachedPlugin_cache",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 13711,
+        "ModuleName" : "InstructionCache"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 6213,
+        "InstName" : "dataCache_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12857,
+        "ModuleName" : "DataCache"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 912,
+      "InstName" : "io_coreInterrupt_buffercc",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 4639,
+      "ModuleName" : "BufferCC_2"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 918,
+      "InstName" : "jtagBridge_1",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 3911,
+      "ModuleName" : "JtagBridge",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 4039,
+        "InstName" : "flowCCUnsafeByToggle_1",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12785,
+        "ModuleName" : "FlowCCUnsafeByToggle",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 12810,
+          "InstName" : "inputArea_target_buffercc",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16473,
+          "ModuleName" : "BufferCC_7"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 934,
+      "InstName" : "systemDebugger_1",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 3824,
+      "ModuleName" : "SystemDebugger"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 954,
+      "InstName" : "axi4ReadOnlyDecoder_2",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 3641,
+      "ModuleName" : "Axi4ReadOnlyDecoder",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 3710,
+        "InstName" : "errorSlave",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12726,
+        "ModuleName" : "Axi4ReadOnlyErrorSlave_1"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 994,
+      "InstName" : "dbus_axi_decoder",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 3273,
+      "ModuleName" : "Axi4SharedDecoder",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 3417,
+        "InstName" : "errorSlave",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12637,
+        "ModuleName" : "Axi4SharedErrorSlave"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1082,
+      "InstName" : "axi_vgaCtrl_io_axi_decoder",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 3126,
+      "ModuleName" : "Axi4ReadOnlyDecoder_1",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 3177,
+        "InstName" : "errorSlave",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12580,
+        "ModuleName" : "Axi4ReadOnlyErrorSlave"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1108,
+      "InstName" : "axi_ram_io_axi_arbiter",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 2798,
+      "ModuleName" : "Axi4SharedArbiter",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2947,
+        "InstName" : "cmdArbiter",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12486,
+        "ModuleName" : "StreamArbiter_2"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2977,
+        "InstName" : "cmdRouteFork_thrown_translated_fifo",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12451,
+        "ModuleName" : "StreamFifoLowLatency_2",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 12468,
+          "InstName" : "fifo",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16379,
+          "ModuleName" : "StreamFifo_4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1171,
+      "InstName" : "axi_sdramCtrl_io_axi_arbiter",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 2421,
+      "ModuleName" : "Axi4SharedArbiter_1",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2593,
+        "InstName" : "cmdArbiter",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12302,
+        "ModuleName" : "StreamArbiter_1"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2631,
+        "InstName" : "cmdRouteFork_thrown_translated_fifo",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12451,
+        "ModuleName" : "StreamFifoLowLatency_2",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 12468,
+          "InstName" : "fifo",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16379,
+          "ModuleName" : "StreamFifo_4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1247,
+      "InstName" : "axi_apbBridge_io_axi_arbiter",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 2159,
+      "ModuleName" : "Axi4SharedArbiter_2",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2275,
+        "InstName" : "cmdArbiter",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12226,
+        "ModuleName" : "StreamArbiter"
+       },
+       {
+        "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "InstLine" : 2296,
+        "InstName" : "cmdRouteFork_thrown_translated_fifo",
+        "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+        "ModuleLine" : 12451,
+        "ModuleName" : "StreamFifoLowLatency_2",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "InstLine" : 12468,
+          "InstName" : "fifo",
+          "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+          "ModuleLine" : 16379,
+          "ModuleName" : "StreamFifo_4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1297,
+      "InstName" : "io_apb_decoder",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 2107,
+      "ModuleName" : "Apb3Decoder"
+     },
+     {
+      "InstFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "InstLine" : 1315,
+      "InstName" : "apb3Router_1",
+      "ModuleFile" : "D:/A_my_project/Gaowin/Briey_SOC/src/Briey.v",
+      "ModuleLine" : 1976,
+      "ModuleName" : "Apb3Router"
+     }
+    ]
+   }
+  ]
+ }
+]
